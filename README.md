@@ -17,7 +17,6 @@ Most prompts are cluttered, ugly and slow. I wanted something visually pleasing 
 - Indicates when you have unpushed/unpulled `git` commits with up/down arrows.
 - Prompt character turns red if the last command didn't exit with `0`.
 - Command execution time will be displayed if it exceeds the set threshold.
-- Username and host only displayed when in an SSH session.
 - Shows the current path in the title and the current folder and command when a process is running.
 - Makes an excellent starting point for your own custom prompt.
 
