@@ -61,25 +61,12 @@ prompt pure
 ```
 
 
-## Options
-
-### `PURE_CMD_MAX_EXEC_TIME`
-
-The max execution time of a process before its run time is shown when it exits. Defaults to `5` seconds.
-
-### `PURE_GIT_UNTRACKED_DIRTY`
-
-Set `PURE_GIT_UNTRACKED_DIRTY=0` to not include untracked files in dirtiness check. Only really useful on extremely huge repos like the WebKit repo.
-
 ## Example
 
 ```sh
 # .zshrc
 
 autoload -U promptinit && promptinit
-
-# optionally define some options
-PURE_CMD_MAX_EXEC_TIME=10
 
 prompt pure
 ```

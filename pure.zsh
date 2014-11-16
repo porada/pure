@@ -36,9 +36,7 @@ prompt_pure_git_dirty() {
 	# check if we're in a git repo
 	command git rev-parse --is-inside-work-tree &>/dev/null || return
 	# check if it's dirty
-	[[ "$PURE_GIT_UNTRACKED_DIRTY" == 0 ]] && local umode="-uno" || local umode="-unormal"
-	command test -n "$(git status --porcelain --ignore-submodules ${umode})"
-
+	command test -n "$(git status --porcelain --ignore-submodules -unormal)"
 	(($? == 0)) && echo '*'
 }
 
@@ -47,7 +45,7 @@ prompt_pure_cmd_exec_time() {
 	local stop=$EPOCHSECONDS
 	local start=${cmd_timestamp:-$stop}
 	integer elapsed=$stop-$start
-	(($elapsed > ${PURE_CMD_MAX_EXEC_TIME:=5})) && prompt_pure_human_time $elapsed
+	(($elapsed > 5)) && prompt_pure_human_time $elapsed
 }
 
 prompt_pure_preexec() {
