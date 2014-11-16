@@ -14,7 +14,6 @@ Most prompts are cluttered, ugly and slow. I wanted something visually pleasing 
 - Comes with the perfect prompt character.
   Author went through the whole Unicode range to find it.
 - Shows `git` branch and whether it's dirty (with a `*`).
-- Indicates when you have unpushed/unpulled `git` commits with up/down arrows.
 - Prompt character turns red if the last command didn't exit with `0`.
 - Command execution time will be displayed if it exceeds the set threshold.
 - Shows the current path in the title and the current folder and command when a process is running.
@@ -67,10 +66,6 @@ prompt pure
 ### `PURE_CMD_MAX_EXEC_TIME`
 
 The max execution time of a process before its run time is shown when it exits. Defaults to `5` seconds.
-
-### `PURE_GIT_PULL`
-
-Set `PURE_GIT_PULL=0` to prevent Pure from checking whether the current Git remote has been updated.
 
 ### `PURE_GIT_UNTRACKED_DIRTY`
 
