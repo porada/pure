@@ -11,7 +11,7 @@ Most prompts are cluttered, ugly and slow. I wanted something visually pleasing 
 
 ### Why?
 
-- Comes with the perfect prompt character.  
+- Comes with the perfect prompt character.
   Author went through the whole Unicode range to find it.
 - Shows `git` branch and whether it's dirty (with a `*`).
 - Indicates when you have unpushed/unpulled `git` commits with up/down arrows.
@@ -23,18 +23,6 @@ Most prompts are cluttered, ugly and slow. I wanted something visually pleasing 
 
 
 ## Install
-
-Can be installed with `npm` or manually. Requires git 2.0.0+ and ZSH 5.0.0+.
-
-### npm
-
-```sh
-$ npm install --global pure-prompt
-```
-
-That's it. Skip to [Getting started](#getting-started).
-
-### Manually
 
 1. Either…
   - Clone this repo
@@ -108,21 +96,6 @@ prompt pure
 [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme) theme with the [Droid Sans Mono](http://www.google.com/webfonts/specimen/Droid+Sans+Mono) font (15pt) is a beautiful combination, as seen in the screenshot above. Just make sure you have anti-aliasing enabled in your Terminal.
 
 To have commands colorized as seen in the screenshot install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
-
-
-## Integration
-
-### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-Symlink (or copy) `pure.zsh` to `~/.oh-my-zsh/custom/pure.zsh-theme` and add `ZSH_THEME="pure"` to your `.zshrc` file.
-
-### [prezto](https://github.com/sorin-ionescu/prezto)
-
-Symlink (or copy) `pure.zsh` to `~/.zprezto/modules/prompt/functions/prompt_pure_setup` alongside Prezto's other prompts. Then `set zstyle ':prezto:module:prompt' theme 'pure'` in `~/.zpreztorc`.
-
-### [antigen](https://github.com/zsh-users/antigen)
-
-Add `antigen bundle sindresorhus/pure` to your .zshrc file (do not use the `antigen theme` function).
 
 
 ## License
