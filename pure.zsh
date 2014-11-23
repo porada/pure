@@ -53,7 +53,7 @@ prompt_pure_preexec() {
 
 	# shows the current dir and executed command in the title when a process is active
 	print -Pn "\e]0;"
-	echo -nE "$2 — "
+	echo -nE "${2[(w)1]} — "
 	print -Pn "%~\a"
 }
 
