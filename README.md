@@ -79,6 +79,13 @@ prompt pure
 To have commands colorized as seen in the screenshot install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 
 
+## FAQ
+
+### Do you hate almost all software?
+
+[Yes.](https://gist.github.com/cookrn/4015437)
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
